@@ -31,3 +31,20 @@ header nav a:hover{
 header nav a.active{
       color: #ddd;
 }
+
+main{
+      min-height: 80vh;
+}
+
+footer{
+      padding: 15px;
+      box-sizing: border-box;
+      height: 10vh;
+      background-color: grey;
+      color: #ddd;
+
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: flex-end;
+}
