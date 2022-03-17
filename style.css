@@ -1,50 +1,236 @@
-*{
-      font-family: sans-serif;
-      margin: 0;
+* {
+  font-family: sans-serif;
+  margin: 0;
 }
-header{
-      padding: 0 15px;
-      height: 10vh;
-      background-color: grey;
-      color: white;
+header {
+  padding: 0 5%;
+  height: 10vh;
+  background-color: #4066e0;
+  color: white;
 
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
-header a{
-      color: #fff;
-      text-decoration: none;
+header a {
+  font-size: 1.2em;
+  color: #fff;
+  text-decoration: none;
 }
-header nav a{
-      color: #bbb;
-      text-decoration: none;
-      margin-left: 15px;
+header a img {
+  width: 50px;
+}
+header nav a {
+  color: #eee;
+  text-decoration: none;
+  margin-left: 15px;
+  opacity: 0.5;
 
-      transition: 500ms;
+  transition: 500ms;
 }
-header nav a:hover{
-      color: #ddd;
+header nav a:hover {
+  opacity: 1;
 
-      transition: 500ms;
+  transition: 200ms;
 }
-header nav a.active{
-      color: #ddd;
-}
-
-main{
-      min-height: 80vh;
+header nav a.active {
+  opacity: 1;
 }
 
-footer{
-      padding: 15px;
-      box-sizing: border-box;
-      height: 10vh;
-      background-color: grey;
-      color: #ddd;
+main {
+  min-height: 80vh;
+}
+main .seg {
+  margin: 50px 15px;
+}
+main hr {
+  width: 90%;
+  margin: auto;
+}
+main .seg .title {
+  text-align: center;
+  margin-bottom: 40px;
 
+  font-size: 2.5em;
+}
+main #intro .contain {
+  min-height: 75vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+main #intro .contain .data {
+  text-align: right;
+  margin-right: 15px;
+}
+main #intro .contain .vr {
+  width: 2px;
+  height: 120px;
+  background-color: #ddd;
+}
+main #intro .contain .data h2 {
+  margin-bottom: 5px;
+  font-size: 2.5em;
+}
+main #intro .contain .data p {
+  margin-top: 10px;
+  color: #666;
+}
+main #intro .contain img {
+  margin-left: 15px;
+  width: 25vw;
+  height: 25vw;
+  border-radius: 50%;
+  object-fit: cover;
+  object-position: 0 -50px;
+}
+
+main #skills .contain {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+main #skills .contain .skill {
+  width: 125px;
+  height: 125px;
+
+  display: flex;
+  justify-content: center;
+
+  margin: 30px;
+  position: relative;
+  overflow: hidden;
+}
+main #skills .contain .skill .des {
+  position: absolute;
+  top: 125px;
+  transition: 200ms;
+  opacity: 0;
+}
+main #skills .contain .skill .des img {
+  width: 15px !important;
+  height: 15px !important;
+}
+main #skills .contain .skill img {
+  width: 125px;
+  height: 125px;
+  transition: 500ms;
+}
+main #skills .contain .skill:hover img {
+  width: 75px;
+  height: 75px;
+  transition: 500ms;
+}
+main #skills .contain .skill:hover .des {
+  top: 90px;
+  opacity: 1;
+  transition: 500ms;
+}
+main #projects{
       display: flex;
       flex-direction: column;
       align-items: center;
-      justify-content: flex-end;
+}
+main #projects .contain {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+main #contact {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.btn {
+  text-decoration: none;
+  font-size: 1.25em;
+  padding: 10px 20px;
+  border-radius: 5px;
+  background-color: #4066e0;
+  color: #eee;
+
+  transition: 175ms;
+}
+.btn:hover {
+  background-color: #eee;
+  color: #4066e0;
+  box-shadow: 0 5px 10px #66666666;
+  transition: 175ms;
+}
+.card {
+  position: relative;
+  height: 400px;
+  width: 300px;
+
+  padding: 20px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+
+  border-radius: 15px;
+  box-shadow: 0 4px 10px #aaa8;
+  transition: 200ms;
+
+  margin: 5px 20px;
+}
+.card{
+      font-size: 1.4em;
+}
+.card:hover {
+  box-shadow: 0 2px 10px #aaa8;
+  transition: 200ms;
+}
+.card .disp {
+  width: 300px;
+  height: 300px;
+  border-radius: 20px;
+  box-shadow: 0 -2px 10px #aaa8;
+  position: relative;
+  overflow: hidden;
+  transition: 200ms;
+}
+.card:hover .disp {
+  box-shadow: 0 -1px 10px #aaa8;
+  transition: 200ms;
+}
+.card .disp .shade {
+  position: absolute;
+  top: 50px;
+  width: 300px;
+  height: 300px;
+  border-radius: 20px;
+  background: linear-gradient(#0000, #0001, #0002, #0003);
+  transition: 200ms;
+}
+.card:hover .disp .shade {
+  /* background: linear-gradient(#0000, #0002); */
+  top: 150px;
+  transition: 200ms;
+}
+.card .disp img {
+  width: 300px;
+  height: 300px;
+  border-radius: 20px;
+  object-fit: cover;
+  object-position: 0 0;
+  transition: 200ms;
+}
+.card:hover .disp img{
+      object-position: 0 -100px;
+      transition: 1000ms;
+}
+
+footer {
+  padding: 15px;
+  box-sizing: border-box;
+  height: 10vh;
+  background-color: #4066e0;
+  color: #ddd;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
