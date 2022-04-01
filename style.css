@@ -39,6 +39,7 @@ header nav a.active {
 
 main {
   min-height: 80vh;
+  margin-bottom: 20px;
 }
 main .seg {
   margin: 50px 15px;
@@ -76,15 +77,16 @@ main #intro .contain .data p {
   margin-top: 10px;
   color: #666;
 }
-main #intro .contain img {
-  margin-left: 15px;
+main #intro .contain img, .profile {
   width: 25vw;
   height: 25vw;
-  border-radius: 50%;
+  border-radius: 100%;
   object-fit: cover;
   object-position: 0 -50px;
 }
-
+main #intro .contain img{
+  margin-left: 15px;
+}
 main #skills .contain {
   display: flex;
   flex-wrap: wrap;
@@ -134,15 +136,8 @@ main #projects {
 main #projects .contain {
   display: flex;
   justify-content: center;
+  flex-wrap: wrap;
   margin-bottom: 20px;
-  width: 100%;
-
-  overflow-x: scroll;
-}
-@media screen and (max-width: 800px) {
-  main #projects .contain {
-    justify-content: flex-start;
-  }
 }
 main #contact {
   display: flex;

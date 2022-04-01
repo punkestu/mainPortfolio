@@ -1,0 +1,62 @@
+main{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-top: 30px;
+}
+.profile{
+      margin-bottom: 20px;
+}
+main .row{
+      display: flex;
+      width: 350px;
+      justify-content: center;
+      align-items: center;
+      flex-wrap: wrap;
+}
+.btn{
+      display: flex;
+      align-items: center;
+      width: 125px;
+      height: 35px;
+      text-align: center;
+      margin: 5px;
+      position: relative;
+      overflow: hidden;
+}
+.btn div{
+      position: absolute;
+      left: 150%;
+      transition: 500ms;
+}
+.btn:hover div{
+      left: 60px;
+      transition: 500ms;
+}
+.btn img{
+      position: absolute;
+      margin: 0;
+      left: 50%;
+      transform: translate(-50%,0);
+      width: 32px;
+      background-color: white;
+      border-radius: 100%;
+      padding: 3px;
+      transition: 250ms;
+}
+.gh{
+      width: 100%;
+}
+.btn:hover img{
+      transform: translate(0,0);
+      left: 10px;
+      /* position: inherit; */
+      transition: 250ms;
+}
+.gh:hover div{
+      left: 46%;
+}
+.gh:hover img{
+      left: 50%;
+      transform: translate(-150%,0);
+}
