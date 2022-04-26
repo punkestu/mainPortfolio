@@ -1,0 +1,23 @@
+main {
+      display: flex;
+      justify-content: center;
+      margin-top: 10px;
+      flex-wrap: wrap;
+}
+
+.card {
+      width: 40%;
+      margin-top: 20px;
+}
+
+.card .disp {
+      width: 450px;
+}
+
+.card .disp .shade {
+      width: 450px;
+}
+
+.card .disp img {
+      width: 450px;
+}
