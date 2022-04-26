@@ -10,6 +10,14 @@ main {
       margin-top: 20px;
 }
 
+
+@media screen and (max-width: 1000px) {
+      .card {
+            width: 80%;
+      }
+}
+
+
 .card .disp {
       width: 90%;
 }
